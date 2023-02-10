@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="menuItems hidden md:block text-xs md:text-lg">
                     <ul className='flex justify-between items-center'>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Home</NavLink></li>
-                        <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Shop</NavLink></li>
+                        <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="/shop">Shop</NavLink></li>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Blog</NavLink></li>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Contact</NavLink></li>
                     </ul>

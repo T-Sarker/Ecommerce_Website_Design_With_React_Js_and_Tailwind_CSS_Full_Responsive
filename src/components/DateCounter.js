@@ -42,32 +42,36 @@ const DateCounter = () => {
     };
 
     useEffect(() => {
-        countdownTimer();
+        if (countdownTime.countdownSeconds > 0) {
+            countdownTimer();
+        }
     });
 
     return (
         <>
             <div className='sm:max-w-[300px] text-sm font-bold sm:text-1xl md:text-2xl lg:text-3xl flex items-center justify-between'>
 
-                <div className="block mr-4 md:my-2 lg:my-3">
-                    <p>{countdownTime.countdownDays} :</p>
-                    <p className="font-thin text-sm">D</p>
-                </div>
+                {countdownTime.countdownSeconds > 0 ? <>
+                    <div className="block mr-4 md:my-2 lg:my-3">
+                        <p>{countdownTime.countdownDays} :</p>
+                        <p className="font-thin text-sm">D</p>
+                    </div>
 
-                <div className="block mr-4 md:my-2 lg:my-3">
-                    <p>{countdownTime.countdownHours} :</p>
-                    <p className="font-thin text-sm">Hr</p>
-                </div>
+                    <div className="block mr-4 md:my-2 lg:my-3">
+                        <p>{countdownTime.countdownHours} :</p>
+                        <p className="font-thin text-sm">Hr</p>
+                    </div>
 
-                <div className="block mr-4 md:my-2 lg:my-3">
-                    <p>{countdownTime.countdownMinutes} :</p>
-                    <p className="font-thin text-sm">Min</p>
-                </div>
+                    <div className="block mr-4 md:my-2 lg:my-3">
+                        <p>{countdownTime.countdownMinutes} :</p>
+                        <p className="font-thin text-sm">Min</p>
+                    </div>
 
-                <div className="block mr-4 md:my-2 lg:my-3">
-                    <p>{countdownTime.countdownSeconds}</p>
-                    <p className="font-thin text-sm">Sec</p>
-                </div>
+                    <div className="block mr-4 md:my-2 lg:my-3">
+                        <p>{countdownTime.countdownSeconds}</p>
+                        <p className="font-thin text-sm">Sec</p>
+                    </div>
+                </> : ''}
             </div>
 
         </>
