@@ -16,7 +16,7 @@ const Header = () => {
                     <ul className='flex justify-between items-center'>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Home</NavLink></li>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="/shop">Shop</NavLink></li>
-                        <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Blog</NavLink></li>
+                        <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="/blog">Blog</NavLink></li>
                         <li className='mx-3 hover:underline hover:underline-offset-4 decoration-pink-500'><NavLink to="">Contact</NavLink></li>
                     </ul>
                 </div>
@@ -40,9 +40,9 @@ const Header = () => {
                         <input type="text" className='w-[80%] p-1 h-7' /><FaSearch className='font-light text-lg p-1 ml-1 rounded-sm bg-teal-400 h-7' />
                     </div>
                     <ul className="block px-2 divide-y divide-gray-50">
-                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="">Home</NavLink></li>
-                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="">Shop</NavLink></li>
-                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="">Blog</NavLink></li>
+                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="/">Home</NavLink></li>
+                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="/shop">Shop</NavLink></li>
+                        <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="/blog">Blog</NavLink></li>
                         <li className='py-2 mb-2 hover:text-pink-500'><NavLink to="">Contact</NavLink></li>
                         <li className='py-2 mb-2 hover:text-pink-500'><FaHeart className='font-light' /></li>
                         <li className='py-2 mb-2 hover:text-pink-500 flex items-center'><FaShoppingCart className='mr-2 font-light' /> $0.00</li>
