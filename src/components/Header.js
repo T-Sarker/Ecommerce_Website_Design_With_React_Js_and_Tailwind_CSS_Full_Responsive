@@ -24,7 +24,7 @@ const Header = () => {
                     <ul className='flex justify-between items-center hidden md:flex'>
                         <li className='mx-3'><FaSearch className='font-light' /></li>
                         <li className='mx-3'><FaHeart className='font-light' /></li>
-                        <li className='mx-3 flex items-center'><FaShoppingCart className='mr-2 font-light' /> $0.00</li>
+                        <li className='mx-3 '><NavLink className='flex items-center' to='/checkout'><FaShoppingCart className='mr-2 font-light' /> $0.00</NavLink></li>
                     </ul>
                 </div>
                 {
